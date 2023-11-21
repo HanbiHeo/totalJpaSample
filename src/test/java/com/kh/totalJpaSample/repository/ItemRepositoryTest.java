@@ -85,4 +85,23 @@ class ItemRepositoryTest {
             System.out.println(item);
         }
     }
+
+    @Test
+    @DisplayName("Query를 이용한 상품 조회 테스트 내림차순")
+    public void priceSortingTest() {
+        this.createItemList();
+        List<Item> itemList = itemRepository.priceSorting("테스트");
+        for(Item item : itemList) {
+            System.out.println(item);
+        }
+    }
+    @Test
+    @DisplayName("Native Query 테스트")
+    public void priceSortingNativeTest() {
+        this.createItemList();
+        List<Item> itemList = itemRepository.priceSortingNative("상품");
+        for(Item item : itemList) {
+            System.out.println(item);
+        }
+    }
 }

@@ -3,6 +3,8 @@ import com.kh.totalJpaSample.dto.MemberDto;
 import com.kh.totalJpaSample.entity.Member;
 import com.kh.totalJpaSample.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -38,6 +40,25 @@ public class MemberService {
         return memberDtos; // 회원 목록 반환
     }
 
+//    -------------페이지 네이션 사용법----------------------
+    //페이지네이션 조회 (오버로딩)
+    public List<MemberDto> getMemberList(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        List<MemberDto> memberDtos = new ArrayList<>();
+        List<Member> members = memberRepository.findAll(pageable).getContent(); // 지정한 페이지 만큼만 가져옴.
+        for(Member member : members) {
+            memberDtos.add(convertEntityToDto(member));
+        }
+        return memberDtos;
+    }
+    //페이지 수 조회 getMemberPage 만들기
+    public int getMemberPage(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        return memberRepository.findAll(pageable).getTotalPages();
+    }
+
+
+
     //회원 상세 조회
     public MemberDto getMemberDetail(String email) {
             Member member = memberRepository.findByEmail(email).orElseThrow(
@@ -45,6 +66,7 @@ public class MemberService {
             );
             return convertEntityToDto(member);  // 회원 엔티티를 DTO로 변환하여 반환
     }
+
 
 
     //변환객체 만들기 ; 회원 엔티티를 DTO로 변환하는 메소드 함수 만들기

@@ -41,4 +41,22 @@ public class MemberController {
         MemberDto memberDto = memberService.getMemberDetail(email);
         return ResponseEntity.ok(memberDto);
     }
+
+    // ---------------------페이지 네이션-----------------
+    //페이지 네이션 조회
+    @GetMapping("/list/page")
+    public ResponseEntity<List<MemberDto>> memberList(@RequestParam(defaultValue = "0") int page,
+                                                                                                                                  @RequestParam(defaultValue = "10") int size) {
+        List<MemberDto> list = memberService.getMemberList(page, size);
+        return ResponseEntity.ok(list);
+    }
+
+    //총 페이지 수 조회(총 페이지 수 만들기)
+    @GetMapping("/list/page-cnt")
+    public ResponseEntity<Integer> memberPageCount(@RequestParam(defaultValue = "0") int page,
+                                                                                                                           @RequestParam(defaultValue = "5") int size) {
+        int pageCnt = memberService.getMemberPage(page, size);
+        return ResponseEntity.ok(pageCnt);
+    }
+
 }
