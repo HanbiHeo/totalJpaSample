@@ -1,6 +1,6 @@
 package com.kh.totalJpaSample.entity;
 
-//persistence : 연속성. 영구히 보존되는 특징이 있음.
+//persistence : 영속성. 생성된 프로그램의 실행이 종료되더라도 그 데이터가 영구히 보존되는 특징이 있음. 주로 데이터베이스와 관련되어 사용하며, 데이터베이스에 저장된 정보는 프로그램이 종료되더라도 지속적으로 유지된다.
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

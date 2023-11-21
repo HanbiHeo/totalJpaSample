@@ -13,30 +13,29 @@ import java.util.List;
 //RequiredArgsConstructor : 생성자로 의존성 주입을 함. 매개변수가 전부 포함된 생성자를 자동으로 생성해준다
 @RequiredArgsConstructor
 public class MemberService {
-    private final MemberRepository memberRepository; // 객체 생성을 안한 의존성 주입. 외부에서 만든걸 가져다 쓰기 때문에 의존성 주입 받아야함. 생성자 따로 안만들어도 된다. new를 안해주고 가져다 씀.
-    //회원 등록
+    private final MemberRepository memberRepository; // 객체 생성을 안한 의존성 주입(MemberRepository를 주입받음). 외부에서 만든걸 가져다 쓰기 때문에 의존성 주입 받아야함. 생성자 따로 안만들어도 된다. new를 안해주고 가져다 씀.
+    //회원 등록 메서드
     public boolean saveMember(MemberDto memberDto) {
-        //이미 등록되어있는 회원인지 확인하는 쿼리문
-        boolean isReg = memberRepository.existsByEmail(memberDto.getEmail());
-        if(isReg) return false;
+        boolean isReg = memberRepository.existsByEmail(memberDto.getEmail());   //이미 등록되어있는 회원인지 확인하는 쿼리문
+        if(isReg) return false; // 이미 등록된 회원이면 등록하지 않음
 
-        Member member = new Member();
+        Member member = new Member(); // Member 엔티티 생성
         member.setEmail(memberDto.getEmail());
         member.setPassword(memberDto.getPassword());
         member.setName(memberDto.getName());
-        memberRepository.save(member);
-        return true;
+        memberRepository.save(member); // 회원 저장
+        return true; // 회원 등록 성공
     }
 
     //회원 전체 조회
     public List<MemberDto> getMemberList() {
         List<MemberDto> memberDtos = new ArrayList<>();
-        List<Member> members = memberRepository.findAll(); // select *과 같음 = findAll()
+        List<Member> members = memberRepository.findAll(); // select *과 같음 = findAll()  _  모든 회원 조회
         //향상된 for문
-        for(Member member  : members) {
+        for(Member member  : members) {  // 회원 엔티티를 DTO로 변환하여 리스트에 추가
             memberDtos.add(convertEntityToDto(member));
         }
-        return memberDtos;
+        return memberDtos; // 회원 목록 반환
     }
 
     //회원 상세 조회
@@ -44,7 +43,7 @@ public class MemberService {
             Member member = memberRepository.findByEmail(email).orElseThrow(
                     () -> new RuntimeException("해당 회원이 존재하지 않습니다.")
             );
-            return convertEntityToDto(member);
+            return convertEntityToDto(member);  // 회원 엔티티를 DTO로 변환하여 반환
     }
 
 
@@ -55,6 +54,6 @@ public class MemberService {
         memberDto.setPassword(member.getPassword());
         memberDto.setName(member.getName());
         memberDto.setRegDate(member.getRegDate());
-        return memberDto;
+        return memberDto; // 회원 DTO 반환
     }
 }
