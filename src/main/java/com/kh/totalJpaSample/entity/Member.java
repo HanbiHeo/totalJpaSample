@@ -20,8 +20,9 @@ public class Member {
     @Id
     //id의 생성 전략을 맡김. = generation 타입을 auto(Oracle)로하면 id 생성을 위임함. identity(mySQL)로 하면 오류가 날 확률이 있음. 실제 생성은 db에 생성함.
     @GeneratedValue(strategy = GenerationType.AUTO) //주키 값이 자동으로 생성되는 방식을 설정합니다.
+    @Column(name = "member_id") // 생성된 아아디의 이름 지정해주기
     private Long id;
-
+    private String userId;
     @Column(nullable = false) // NULL 허용하지 않음
     private String name;
     private String password;
