@@ -1,0 +1,733 @@
+11:40:09.804 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 14784 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+11:40:09.808 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+11:40:09.879 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+11:40:09.880 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:40:09.881 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:40:11.044 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:40:11.143 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 5 JPA repository interfaces.
+11:40:12.091 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+11:40:12.102 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+11:40:12.106 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:40:12.107 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:40:12.230 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:40:12.230 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2349 ms
+11:40:12.511 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:40:12.581 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:40:12.799 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:40:12.947 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:40:13.424 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:40:13.441 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11:40:15.250 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:40:15.266 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:40:16.033 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:40:16.224 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:40:16.228 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+11:40:16.234 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+11:40:16.392 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:40:16.823 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+11:40:16.850 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+11:40:16.851 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:40:16.877 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:40:16.910 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:40:17.030 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+11:40:17.084 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 7.763 seconds (JVM running for 8.54)
+11:49:33.662 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest], using SpringBootContextLoader
+11:49:33.672 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:49:33.673 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: OrderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:49:33.801 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kh.totalJpaSample.TotalJpaSampleApplication for test class com.kh.totalJpaSample.repository.OrderRepositoryTest
+11:49:33.929 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:49:33.954 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4dc8caa7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d730606, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3bcbb589, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b00856b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3016fd5e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35d08e6c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53d102a2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6c45ee6e, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b3e12b5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5aac4250, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1338fb5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42463763, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@59f63e24, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@61f05988, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ca33c24]
+11:49:34.371 [main] INFO  c.k.t.repository.OrderRepositoryTest - Starting OrderRepositoryTest using Java 19.0.2 on DESKTOP-F4QGJRU with PID 33212 (started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+11:49:34.371 [main] INFO  c.k.t.repository.OrderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+11:49:35.434 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:49:35.522 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+11:49:36.348 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:49:36.415 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:49:36.632 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:49:36.910 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:49:37.453 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:49:37.473 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11:49:39.457 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:49:39.468 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:49:40.363 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:49:40.811 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:49:40.823 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+11:49:40.833 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+11:49:41.925 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:49:41.962 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:49:41.996 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:49:42.114 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+11:49:42.165 [main] INFO  c.k.t.repository.OrderRepositoryTest - Started OrderRepositoryTest in 8.162 seconds (JVM running for 9.586)
+11:49:42.215 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@33da0fad testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@712eb075, testMethod = orphanRemovalTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1cd4082a testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2254127a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b35a229, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7dc3712, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be1d0a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7068e664, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@47af7f3d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@551976c2]; rollback [true]
+11:49:42.580 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:49:42.581 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:49:42.582 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:49:42.582 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:49:42.583 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.584 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:49:42.584 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:49:42.585 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [1]
+11:49:42.590 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:49:42.592 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [2]
+11:49:42.593 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:49:42.594 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:49:42.594 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:49:42.594 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:49:42.595 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.595 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:49:42.595 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:49:42.595 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [3]
+11:49:42.596 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [hhb03@gmail.com]
+11:49:42.596 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [허한비]
+11:49:42.596 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+11:49:42.597 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-23T11:49:42.502201800]
+11:49:42.597 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+11:49:42.597 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [4]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.602 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [5]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [1]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:49:42.603 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [6]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [2]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:49:42.606 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [7]
+11:49:42.607 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [3]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:49:42.608 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [8]
+11:49:42.611 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [6]
+11:49:42.625 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@33da0fad testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@712eb075, testMethod = orphanRemovalTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1cd4082a testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2254127a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b35a229, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7dc3712, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be1d0a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7068e664, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@47af7f3d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+11:49:42.640 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:49:42.643 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:49:42.653 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:51:38.680 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest], using SpringBootContextLoader
+11:51:38.687 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:51:38.689 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: OrderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:51:38.826 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kh.totalJpaSample.TotalJpaSampleApplication for test class com.kh.totalJpaSample.repository.OrderRepositoryTest
+11:51:38.961 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:51:38.985 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4dc8caa7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d730606, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3bcbb589, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3b00856b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3016fd5e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@35d08e6c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53d102a2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6c45ee6e, org.springframework.test.context.event.EventPublishingTestExecutionListener@6b3e12b5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5aac4250, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1338fb5, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@42463763, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@59f63e24, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@61f05988, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7ca33c24]
+11:51:39.399 [main] INFO  c.k.t.repository.OrderRepositoryTest - Starting OrderRepositoryTest using Java 19.0.2 on DESKTOP-F4QGJRU with PID 23176 (started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+11:51:39.400 [main] INFO  c.k.t.repository.OrderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+11:51:40.435 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:51:40.527 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+11:51:41.317 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:51:41.389 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:51:41.642 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:51:41.935 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:51:42.479 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:51:42.511 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+11:51:44.540 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:51:44.558 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:51:45.437 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:51:45.880 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:51:45.883 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+11:51:45.890 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+11:51:46.957 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+11:51:46.990 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+11:51:47.031 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+11:51:47.179 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+11:51:47.230 [main] INFO  c.k.t.repository.OrderRepositoryTest - Started OrderRepositoryTest in 8.199 seconds (JVM running for 9.704)
+11:51:47.292 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@33da0fad testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@712eb075, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1cd4082a testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2254127a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b35a229, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7dc3712, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be1d0a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7068e664, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@47af7f3d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@551976c2]; rollback [true]
+11:51:47.682 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:51:47.683 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:51:47.684 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:51:47.685 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:51:47.686 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.687 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:51:47.687 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:51:47.688 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [1]
+11:51:47.696 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:51:47.696 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:51:47.697 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [2]
+11:51:47.699 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+11:51:47.699 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+11:51:47.699 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+11:51:47.699 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+11:51:47.700 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.700 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+11:51:47.700 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+11:51:47.700 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [3]
+11:51:47.701 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [hhb03@gmail.com]
+11:51:47.702 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [허한비]
+11:51:47.702 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+11:51:47.702 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-23T11:51:47.621014700]
+11:51:47.702 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+11:51:47.702 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [4]
+11:51:47.708 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+11:51:47.709 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+11:51:47.709 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+11:51:47.709 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+11:51:47.709 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.709 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [5]
+11:51:47.710 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [1]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:51:47.711 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [6]
+11:51:47.713 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [2]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:51:47.714 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [7]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [3]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+11:51:47.715 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+11:51:47.716 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [8]
+11:51:47.736 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [6]
+11:51:47.741 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_0_] : [INTEGER]) - [10]
+11:51:47.742 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_0_] : [BIGINT]) - [1]
+11:51:47.742 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [5]
+11:51:47.742 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_0_] : [INTEGER]) - [1000]
+11:51:47.743 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_0_] : [TIMESTAMP]) - [null]
+11:51:47.743 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_0_] : [TIMESTAMP]) - [null]
+11:51:47.755 [main] WARN  c.k.t.repository.OrderRepositoryTest - class com.kh.totalJpaSample.entity.Order$HibernateProxy$aDycCTmT
+11:51:47.756 [main] WARN  c.k.t.repository.OrderRepositoryTest - ======================================================================
+11:51:47.757 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+11:51:47.758 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i1_3_1_] : [BIGINT]) - [4]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i6_5_0_] : [BIGINT]) - [4]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_da2_5_0_] : [TIMESTAMP]) - [null]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_st3_5_0_] : [VARCHAR]) - [null]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_5_0_] : [TIMESTAMP]) - [null]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_5_0_] : [TIMESTAMP]) - [null]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([email2_3_1_] : [VARCHAR]) - [hhb03@gmail.com]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([name3_3_1_] : [VARCHAR]) - [허한비]
+11:51:47.759 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([password4_3_1_] : [VARCHAR]) - [null]
+11:51:47.760 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_date5_3_1_] : [TIMESTAMP]) - [2023-11-23T11:51:47.621015]
+11:51:47.760 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_id6_3_1_] : [VARCHAR]) - [null]
+11:51:47.760 [main] WARN  c.k.t.repository.OrderRepositoryTest - null
+11:51:47.760 [main] WARN  c.k.t.repository.OrderRepositoryTest - ======================================================================
+11:51:47.774 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@33da0fad testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@712eb075, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1cd4082a testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2254127a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3b35a229, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7dc3712, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5be1d0a4, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7068e664, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@47af7f3d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+11:51:47.793 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:51:47.795 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:51:47.811 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:39:46.518 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:39:46.521 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:39:46.527 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:00:49.440 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest], using SpringBootContextLoader
+10:00:49.454 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+10:00:49.455 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.kh.totalJpaSample.repository.OrderRepositoryTest]: OrderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:00:49.684 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.kh.totalJpaSample.TotalJpaSampleApplication for test class com.kh.totalJpaSample.repository.OrderRepositoryTest
+10:00:49.829 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+10:00:49.860 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@241e8ea6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@542e560f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@626c44e7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4dc8caa7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1d730606, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3bcbb589, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b00856b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3016fd5e, org.springframework.test.context.event.EventPublishingTestExecutionListener@35d08e6c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53d102a2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c45ee6e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b3e12b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5aac4250, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1338fb5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@42463763]
+10:00:50.362 [main] INFO  c.k.t.repository.OrderRepositoryTest - Starting OrderRepositoryTest using Java 19.0.2 on DESKTOP-F4QGJRU with PID 27360 (started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+10:00:50.363 [main] INFO  c.k.t.repository.OrderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+10:00:51.728 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:00:51.857 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 5 JPA repository interfaces.
+10:00:52.766 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:00:52.874 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+10:00:53.174 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:00:53.556 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:00:54.259 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:00:54.288 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:00:56.556 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:00:56.579 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:00:57.670 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:00:58.157 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:00:58.162 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+10:00:58.182 [main] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+10:00:59.475 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:00:59.515 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:00:59.555 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:00:59.664 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+10:00:59.725 [main] INFO  c.k.t.repository.OrderRepositoryTest - Started OrderRepositoryTest in 9.792 seconds (JVM running for 11.781)
+10:00:59.776 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@1cd4082a testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@78c34153, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1b079e81 testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@66ea810, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1224144a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1e16c0aa, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e3f861, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@461ad730, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@74e52303], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@643f8ebe]; rollback [true]
+10:01:00.237 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+10:01:00.240 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+10:01:00.240 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+10:01:00.241 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+10:01:00.243 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.244 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+10:01:00.244 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+10:01:00.245 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [1]
+10:01:00.249 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+10:01:00.250 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [2]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+10:01:00.252 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+10:01:00.253 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [3]
+10:01:00.254 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [hhb03@gmail.com]
+10:01:00.254 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [허한비]
+10:01:00.254 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+10:01:00.255 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T10:01:00.170325600]
+10:01:00.255 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+10:01:00.255 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [4]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.261 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [5]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [1]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+10:01:00.263 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [6]
+10:01:00.265 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [2]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+10:01:00.266 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [7]
+10:01:00.267 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+10:01:00.267 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [3]
+10:01:00.267 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [5]
+10:01:00.267 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+10:01:00.268 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+10:01:00.268 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+10:01:00.268 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [8]
+10:01:00.285 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [6]
+10:01:00.290 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_0_] : [INTEGER]) - [10]
+10:01:00.291 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_0_] : [BIGINT]) - [1]
+10:01:00.291 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [5]
+10:01:00.291 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_0_] : [INTEGER]) - [1000]
+10:01:00.292 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_0_] : [TIMESTAMP]) - [null]
+10:01:00.292 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_0_] : [TIMESTAMP]) - [null]
+10:01:00.304 [main] WARN  c.k.t.repository.OrderRepositoryTest - class com.kh.totalJpaSample.entity.Order$HibernateProxy$P9y3klHY
+10:01:00.304 [main] WARN  c.k.t.repository.OrderRepositoryTest - ======================================================================
+10:01:00.305 [main] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [5]
+10:01:00.307 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i1_3_1_] : [BIGINT]) - [4]
+10:01:00.307 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i6_5_0_] : [BIGINT]) - [4]
+10:01:00.307 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_da2_5_0_] : [TIMESTAMP]) - [null]
+10:01:00.307 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_st3_5_0_] : [VARCHAR]) - [null]
+10:01:00.307 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_5_0_] : [TIMESTAMP]) - [null]
+10:01:00.308 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_5_0_] : [TIMESTAMP]) - [null]
+10:01:00.308 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([email2_3_1_] : [VARCHAR]) - [hhb03@gmail.com]
+10:01:00.308 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([name3_3_1_] : [VARCHAR]) - [허한비]
+10:01:00.308 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([password4_3_1_] : [VARCHAR]) - [null]
+10:01:00.308 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_date5_3_1_] : [TIMESTAMP]) - [2023-11-24T10:01:00.170326]
+10:01:00.309 [main] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_id6_3_1_] : [VARCHAR]) - [null]
+10:01:00.309 [main] WARN  c.k.t.repository.OrderRepositoryTest - null
+10:01:00.310 [main] WARN  c.k.t.repository.OrderRepositoryTest - ======================================================================
+10:01:00.328 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@1cd4082a testClass = OrderRepositoryTest, testInstance = com.kh.totalJpaSample.repository.OrderRepositoryTest@78c34153, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1b079e81 testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.kh.totalJpaSample.TotalJpaSampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@66ea810, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1224144a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1e16c0aa, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5e3f861, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@461ad730, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@74e52303], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+10:01:00.344 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:01:00.348 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:01:00.366 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:01:27.493 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 24256 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+10:01:27.498 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+10:01:27.582 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+10:01:27.582 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:01:27.582 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:01:28.820 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:01:28.914 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+10:01:29.951 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+10:01:29.961 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+10:01:29.965 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:01:29.965 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+10:01:30.128 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:01:30.128 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2545 ms
+10:01:30.446 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:01:30.531 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+10:01:30.795 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:01:30.948 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:01:31.462 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:01:31.484 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:01:33.628 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:01:33.647 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:01:34.530 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:01:34.752 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:01:34.759 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+10:01:34.770 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+10:01:34.949 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:01:35.546 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+10:01:35.584 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+10:01:35.585 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:01:35.619 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:01:35.654 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:01:35.788 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+10:01:35.835 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.885 seconds (JVM running for 10.036)
+10:01:51.875 [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:01:51.876 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:01:51.877 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+10:02:15.322 [http-nio-8111-exec-3] INFO  c.k.t.controller.MemberController - email : 
+10:02:15.424 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [null]
+10:02:15.425 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [허한비]
+10:02:15.425 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+10:02:15.426 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T10:02:15.385171700]
+10:02:15.426 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+10:02:15.427 [http-nio-8111-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [1]
+10:03:04.107 [http-nio-8111-exec-1] INFO  c.k.t.controller.MemberController - email : 
+10:03:04.110 [http-nio-8111-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+10:03:09.894 [http-nio-8111-exec-2] INFO  c.k.t.controller.MemberController - email : 
+10:03:09.896 [http-nio-8111-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+10:03:14.340 [http-nio-8111-exec-4] INFO  c.k.t.controller.MemberController - email : 
+10:03:14.342 [http-nio-8111-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+10:03:26.742 [http-nio-8111-exec-5] INFO  c.k.t.controller.MemberController - email : 
+10:03:26.744 [http-nio-8111-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+10:04:30.550 [http-nio-8111-exec-7] INFO  c.k.t.controller.MemberController - email : 
+10:04:30.554 [http-nio-8111-exec-7] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+10:19:29.470 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+10:19:29.473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:19:29.482 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:19:35.049 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 48468 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+10:19:35.056 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+10:19:35.151 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+10:19:35.151 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:19:35.151 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:19:36.554 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:19:36.660 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 5 JPA repository interfaces.
+10:19:37.622 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+10:19:37.632 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+10:19:37.638 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:19:37.638 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+10:19:37.778 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:19:37.778 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2626 ms
+10:19:38.024 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:19:38.087 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+10:19:38.288 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:19:38.430 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:19:38.874 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:19:38.891 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+10:19:40.664 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:19:40.678 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:19:41.390 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:19:41.584 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:19:41.591 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+10:19:41.599 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+10:19:41.750 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:19:42.180 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+10:19:42.206 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+10:19:42.207 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+10:19:42.234 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:19:42.268 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+10:19:42.410 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+10:19:42.460 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.004 seconds (JVM running for 8.838)
+08:07:55.915 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 23924 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+08:07:55.918 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+08:07:55.993 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+08:07:55.993 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:07:55.993 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:07:57.205 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:07:57.309 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+08:07:58.458 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+08:07:58.473 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+08:07:58.477 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:07:58.477 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+08:07:58.605 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:07:58.605 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2612 ms
+08:07:58.873 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+08:07:58.968 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+08:07:59.187 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:07:59.327 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:07:59.952 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:07:59.974 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:08:01.634 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:08:01.643 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:08:02.390 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:08:02.565 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+08:08:02.569 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+08:08:02.575 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+08:08:02.689 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:08:03.133 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+08:08:03.160 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+08:08:03.161 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+08:08:03.192 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+08:08:03.214 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+08:08:03.315 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+08:08:03.357 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.1 seconds (JVM running for 9.055)
+08:09:07.677 [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+08:09:07.677 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+08:09:07.678 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+08:09:15.669 [http-nio-8111-exec-4] INFO  c.k.t.controller.MemberController - email : 
+08:09:15.699 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [mimi1234@gmail.com]
+08:09:15.783 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [mimi1234@gmail.com]
+08:09:15.783 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [미미]
+08:09:15.783 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+08:09:15.785 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-27T08:09:15.739620700]
+08:09:15.785 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+08:09:15.785 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [1]
+08:10:09.509 [http-nio-8111-exec-4] INFO  c.k.t.controller.MemberController - email : 
+08:10:09.510 [http-nio-8111-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [mimi1234@gmail.com]
+08:10:09.514 [http-nio-8111-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([col_0_0_] : [BIGINT]) - [1]
+08:10:17.486 [http-nio-8111-exec-6] INFO  c.k.t.controller.MemberController - email : 
+08:10:17.490 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [mimi12345@gmail.com]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [mimi12345@gmail.com]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [mimi]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-27T08:10:17.494117800]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+08:10:17.504 [http-nio-8111-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [2]
+08:12:47.749 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+08:12:47.753 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+08:12:47.761 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+08:19:18.587 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 15568 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+08:19:18.594 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+08:19:18.682 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+08:19:18.683 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:19:18.683 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:19:18.888 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.kh.totalJpaSample.TotalJpaSampleApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'memberController' for bean class [com.kh.totalJpaSample.controller.MemberController] conflicts with existing, non-compatible bean definition of same name and class [com.kh.totalJpaSample.config.MemberController]
+08:19:18.931 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.kh.totalJpaSample.TotalJpaSampleApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'memberController' for bean class [com.kh.totalJpaSample.controller.MemberController] conflicts with existing, non-compatible bean definition of same name and class [com.kh.totalJpaSample.config.MemberController]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.kh.totalJpaSample.TotalJpaSampleApplication.main(TotalJpaSampleApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'memberController' for bean class [com.kh.totalJpaSample.controller.MemberController] conflicts with existing, non-compatible bean definition of same name and class [com.kh.totalJpaSample.config.MemberController]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 16 common frames omitted
+08:29:28.580 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 12212 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+08:29:28.585 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+08:29:28.656 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+08:29:28.656 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:29:28.656 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:29:29.717 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+08:29:29.821 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+08:29:30.783 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+08:29:30.793 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+08:29:30.797 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+08:29:30.798 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+08:29:30.919 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+08:29:30.919 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2262 ms
+08:29:31.181 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+08:29:31.254 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+08:29:31.463 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+08:29:31.598 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+08:29:32.042 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+08:29:32.059 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+08:29:32.944 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table board 
+       drop 
+       foreign key FK60jn05fpinj6cjhqcmtkacu2g" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table board 
+       drop 
+       foreign key FK60jn05fpinj6cjhqcmtkacu2g" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1160)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:911)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.kh.totalJpaSample.TotalJpaSampleApplication.main(TotalJpaSampleApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'kh_jpa_sample.board' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 38 common frames omitted
+08:29:32.945 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table board 
+       drop 
+       foreign key FKsds8ox89wwf6aihinar49rmfy" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table board 
+       drop 
+       foreign key FKsds8ox89wwf6aihinar49rmfy" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1160)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:911)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.kh.totalJpaSample.TotalJpaSampleApplication.main(TotalJpaSampleApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'kh_jpa_sample.board' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 38 common frames omitted
+08:29:32.992 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table category 
+       drop 
+       foreign key FKd7qtd46ngp06lnc19g6wtoh8t" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table category 
+       drop 
+       foreign key FKd7qtd46ngp06lnc19g6wtoh8t" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1160)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:911)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+	at com.kh.totalJpaSample.TotalJpaSampleApplication.main(TotalJpaSampleApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'kh_jpa_sample.category' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 38 common frames omitted
+08:29:34.040 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+08:29:34.054 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:29:34.901 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:29:35.076 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+08:29:35.082 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+08:29:35.089 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+08:29:35.212 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+08:29:35.612 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+08:29:35.639 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+08:29:35.641 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+08:29:35.666 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+08:29:35.707 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+08:29:35.829 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: boardListUsingGET_1
+08:29:35.906 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+08:29:35.941 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 7.837 seconds (JVM running for 8.646)

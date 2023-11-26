@@ -1,0 +1,38 @@
+package com.kh.totalJpaSample.entity;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+import javax.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "board")
+@Getter @Setter
+@ToString
+@NoArgsConstructor
+public class Board {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long boardId;
+    private String title;
+    private String content;
+    private String imgPath;
+    private LocalDateTime regDate;
+    @PrePersist
+    public void prePersist() {
+        regDate = LocalDateTime.now();
+    }
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "member_id")//외래키
+    private Member member; //작성자
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id") //외래키
+    private Category category;//작성자
+
+//    @OneToMany(mappedBy = "board", cascade = CascadeType.ALL, orphanRemoval = true)// Board와 Comment는 1:N 관계, mappedBy는 연관관계의 주인이 아니다(난 FK가 아니에요)라는 의미
+//    private List<Comment> comments; //댓글목록
+}
