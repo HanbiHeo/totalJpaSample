@@ -2990,3 +2990,6 @@ java.lang.RuntimeException: 해당 회원이 존재하지 않습니다.
 12:49:35.984 [http-nio-8111-exec-7] WARN  c.k.t.controller.ChatController - chatRoomDto : com.kh.totalJpaSample.dto.ChatRoomResDto@108558e
 12:49:36.001 [http-nio-8111-exec-8] WARN  c.k.t.config.WebSocketHandler - {"type":"ENTER","roomId":"4b6b2423-88f4-4359-a3e9-34460de9cc9a","sender":"mimi1234@naver.com","message":"처음으로 접속 합니다."}
 12:50:00.169 [http-nio-8111-exec-9] WARN  c.k.t.config.WebSocketHandler - {"type":"TALK","roomId":"4b6b2423-88f4-4359-a3e9-34460de9cc9a","sender":"mimi1234@naver.com","message":"ㄴㅇㄹ"}
+18:56:39.618 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:56:39.626 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:56:39.632 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

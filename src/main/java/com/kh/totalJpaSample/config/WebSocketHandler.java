@@ -2,7 +2,6 @@ package com.kh.totalJpaSample.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kh.totalJpaSample.dto.ChatMessageDto;
-import com.kh.totalJpaSample.dto.ChatRoomResDto;
 import com.kh.totalJpaSample.service.ChatService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
