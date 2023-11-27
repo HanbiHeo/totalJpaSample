@@ -1,81 +1,115 @@
 package com.kh.totalJpaSample.service;
-import com.kh.totalJpaSample.dto.MemberDto;
+import com.kh.totalJpaSample.dto.MemberResDto;
 import com.kh.totalJpaSample.entity.Member;
 import com.kh.totalJpaSample.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 //Service : 해당 객체를 빈으로 등록하기. 컨트롤러로 가져다 쓸 때 빈으로 등록했기 때문에 언제든 가져다 쓸 수 있음.
 @Service
+@Slf4j
 //RequiredArgsConstructor : 생성자로 의존성 주입을 함. 매개변수가 전부 포함된 생성자를 자동으로 생성해준다
 @RequiredArgsConstructor
 public class MemberService {
     private final MemberRepository memberRepository; // 객체 생성을 안한 의존성 주입(MemberRepository를 주입받음). 외부에서 만든걸 가져다 쓰기 때문에 의존성 주입 받아야함. 생성자 따로 안만들어도 된다. new를 안해주고 가져다 씀.
-    //회원 등록 메서드
-    public boolean saveMember(MemberDto memberDto) {
-        boolean isReg = memberRepository.existsByEmail(memberDto.getEmail());   //이미 등록되어있는 회원인지 확인하는 쿼리문
-        if(isReg) return false; // 이미 등록된 회원이면 등록하지 않음
+    // 회원 가입 여부 확인
+    public boolean isMember(String email) {
+        return memberRepository.existsByEmail(email);
+    }
 
-        Member member = new Member(); // Member 엔티티 생성
+    // 회원 상세 조회
+    public MemberResDto getMemberDetail(String email) {
+        Member member = memberRepository.findByEmail(email).orElseThrow(
+                () -> new RuntimeException("해당 회원이 존재하지 않습니다.")
+        );
+        return convertEntityToDto(member);
+    }
+    // 회원 가입
+    public boolean saveMember(MemberResDto memberDto) {
+        Member member = new Member();
         member.setEmail(memberDto.getEmail());
-        member.setPassword(memberDto.getPassword());
         member.setName(memberDto.getName());
-        memberRepository.save(member); // 회원 저장
-        return true; // 회원 등록 성공
+        member.setPassword(memberDto.getPwd());
+        member.setImage(memberDto.getImage());
+        member.setRegDate(memberDto.getRegDate());
+        memberRepository.save(member);
+        return true;
     }
 
-    //회원 전체 조회
-    public List<MemberDto> getMemberList() {
-        List<MemberDto> memberDtos = new ArrayList<>();
-        List<Member> members = memberRepository.findAll(); // select *과 같음 = findAll()  _  모든 회원 조회
-        //향상된 for문
-        for(Member member  : members) {  // 회원 엔티티를 DTO로 변환하여 리스트에 추가
-            memberDtos.add(convertEntityToDto(member));
+    // 회원 수정
+    public boolean modifyMember(MemberResDto memberDto) {
+        try {
+            Member member = memberRepository.findByEmail(memberDto.getEmail()).orElseThrow(
+                    () -> new RuntimeException("해당 회원이 존재하지 않습니다.")
+            );
+            member.setName(memberDto.getName());
+            member.setImage(memberDto.getImage());
+            memberRepository.save(member);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
-        return memberDtos; // 회원 목록 반환
     }
-
-//    -------------페이지 네이션 사용법----------------------
-    //페이지네이션 조회 (오버로딩)
-    public List<MemberDto> getMemberList(int page, int size) {
-        Pageable pageable = PageRequest.of(page, size);
-        List<MemberDto> memberDtos = new ArrayList<>();
-        List<Member> members = memberRepository.findAll(pageable).getContent(); // 지정한 페이지 만큼만 가져옴.
+    // 로그인
+    public boolean login(String email, String pwd) {
+        log.info("email: {}, pwd: {}", email, pwd);
+        Optional<Member> member = memberRepository.findByEmailAndPassword(email, pwd);
+        log.info("member: {}", member);
+        return member.isPresent();
+    }
+    // 회원 삭제
+    public boolean deleteMember(String email) {
+        try {
+            Member member = memberRepository.findByEmail(email).orElseThrow(
+                    () -> new RuntimeException("해당 회원이 존재하지 않습니다.")
+            );
+            memberRepository.delete(member);
+            return true; // 회원이 존재하면 true 반환
+        } catch (RuntimeException e) {
+            return false; // 회원이 존재하지 않으면 false 반환
+        }
+    }
+    // 회원 전체 조회
+    public List<MemberResDto> getMemberList() {
+        List<Member> members = memberRepository.findAll();
+        List<MemberResDto> memberDtos = new ArrayList<>();
         for(Member member : members) {
             memberDtos.add(convertEntityToDto(member));
         }
         return memberDtos;
     }
-    //페이지 수 조회 getMemberPage 만들기
-    public int getMemberPage(int page, int size) {
-        Pageable pageable = PageRequest.of(page, size);
+    // 총 페이지 수
+    public int getMemberPage(Pageable pageable) {
         return memberRepository.findAll(pageable).getTotalPages();
     }
 
-
-
-    //회원 상세 조회
-    public MemberDto getMemberDetail(String email) {
-            Member member = memberRepository.findByEmail(email).orElseThrow(
-                    () -> new RuntimeException("해당 회원이 존재하지 않습니다.")
-            );
-            return convertEntityToDto(member);  // 회원 엔티티를 DTO로 변환하여 반환
+    // 회원 조회 : 페이지 네이션
+    public List<MemberResDto> getMemberList(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size);
+        List<Member> members = memberRepository.findAll(pageable).getContent();
+        List<MemberResDto> memberDtos = new ArrayList<>();
+        for(Member member : members) {
+            memberDtos.add(convertEntityToDto(member));
+        }
+        return memberDtos;
     }
 
-
-
-    //변환객체 만들기 ; 회원 엔티티를 DTO로 변환하는 메소드 함수 만들기
-    private MemberDto convertEntityToDto(Member member) {
-        MemberDto memberDto = new MemberDto();
+    // 회원 엔티티를 회원 DTO로 변환
+    private MemberResDto convertEntityToDto(Member member) {
+        MemberResDto memberDto = new MemberResDto();
         memberDto.setEmail(member.getEmail());
-        memberDto.setPassword(member.getPassword());
         memberDto.setName(member.getName());
+        memberDto.setPwd(member.getPassword());
+        memberDto.setImage(member.getImage());
         memberDto.setRegDate(member.getRegDate());
-        return memberDto; // 회원 DTO 반환
+        return memberDto;
     }
 }

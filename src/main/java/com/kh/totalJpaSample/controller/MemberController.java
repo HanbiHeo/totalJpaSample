@@ -1,5 +1,5 @@
 package com.kh.totalJpaSample.controller;
-import com.kh.totalJpaSample.dto.MemberDto;
+import com.kh.totalJpaSample.dto.MemberResDto;
 import com.kh.totalJpaSample.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,41 +22,59 @@ public class MemberController {
     //회원 등록 메서드
     @PostMapping("/new")
     //memberRegister sublet dispetch 통해서 불려오기 때문에 이름은 아무거나 상관 없음 ResponseBody 데이터가 body 에 담겨서 전달(프론트에서 날린 데이터를 받아와야함)
-    public ResponseEntity<Boolean> memberRegister(@RequestBody  MemberDto memberDto) {
+    public ResponseEntity<Boolean> memberRegister(@RequestBody MemberResDto memberDto) {
         log.info("email : " , memberDto.getEmail());
         boolean isTrue = memberService.saveMember(memberDto);  // MemberService 를 이용하여 회원 등록 처리
         return ResponseEntity.ok(isTrue);  // 결과 반환
     }
     //회원 전체 목록 조회 메서드
     @GetMapping("/list")
-    public ResponseEntity<List<MemberDto>> memberList() {
-        List<MemberDto> list = memberService.getMemberList();   // MemberService 를 이용하여 전체 회원 목록 조회
+    public ResponseEntity<List<MemberResDto>> memberList() {
+        List<MemberResDto> list = memberService.getMemberList();   // MemberService 를 이용하여 전체 회원 목록 조회
         return ResponseEntity.ok(list);
     }
 
     //회원 상세조회 메서드
     @GetMapping("/detail/{email}")
-    public ResponseEntity<MemberDto> memberDetail(@PathVariable String email) {
+    public ResponseEntity<MemberResDto> memberDetail(@PathVariable String email) {
         // MemberService 를 이용하여 특정 이메일을 가진 회원의 상세 정보 조회
-        MemberDto memberDto = memberService.getMemberDetail(email);
+        MemberResDto memberDto = memberService.getMemberDetail(email);
         return ResponseEntity.ok(memberDto);
     }
-
+    // 로그인
+    @PostMapping("/login")
+    public ResponseEntity<Boolean> memberLogin(@RequestBody MemberResDto memberDto) {
+        boolean isTrue = memberService.login(memberDto.getEmail(), memberDto.getPwd());
+        return ResponseEntity.ok(isTrue);
+    }
+    // 회원 존재 여부 확인
+    @GetMapping("/check")
+    public ResponseEntity<Boolean> isMember(@RequestParam String email) {
+        log.info("email: {}", email);
+        boolean isReg = memberService.isMember(email);
+        return ResponseEntity.ok(!isReg);
+    }
+    // 회원 삭제
+    @DeleteMapping("/del/{email}")
+    public ResponseEntity<Boolean> memberDelete(@PathVariable String email) {
+        boolean isTrue = memberService.deleteMember(email);
+        return ResponseEntity.ok(isTrue);
+    }
     // ---------------------페이지 네이션-----------------
     //페이지 네이션 조회
     @GetMapping("/list/page")
-    public ResponseEntity<List<MemberDto>> memberList(@RequestParam(defaultValue = "0") int page,
-                                                                                                                                  @RequestParam(defaultValue = "10") int size) {
-        List<MemberDto> list = memberService.getMemberList(page, size);
+    public ResponseEntity<List<MemberResDto>> memberList(@RequestParam(defaultValue = "0") int page,
+                                                         @RequestParam(defaultValue = "10") int size) {
+        List<MemberResDto> list = memberService.getMemberList(page, size);
         return ResponseEntity.ok(list);
     }
 
-    //총 페이지 수 조회(총 페이지 수 만들기)
-    @GetMapping("/list/page-cnt")
-    public ResponseEntity<Integer> memberPageCount(@RequestParam(defaultValue = "0") int page,
-                                                                                                                           @RequestParam(defaultValue = "5") int size) {
-        int pageCnt = memberService.getMemberPage(page, size);
-        return ResponseEntity.ok(pageCnt);
-    }
+//    //총 페이지 수 조회(총 페이지 수 만들기)
+//    @GetMapping("/list/page-cnt")
+//    public ResponseEntity<Integer> memberPageCount(@RequestParam(defaultValue = "0") int page,
+//                                                                                                                           @RequestParam(defaultValue = "5") int size) {
+//        int pageCnt = memberService.getMemberPage(page, size);
+//        return ResponseEntity.ok(pageCnt);
+//    }
 
 }

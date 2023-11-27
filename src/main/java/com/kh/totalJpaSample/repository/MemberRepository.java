@@ -20,7 +20,7 @@ public interface MemberRepository  extends JpaRepository<Member, Long> {     // 
     Member findByPassword(String pwd);
 
     //join문 만들기.   findByEmailAndPassword: 이메일과 비밀번호를 동시에 기준으로 멤버 객체를 찾는 메서드
-    Member findByEmailAndPassword(String email, String pwd);
+    Optional<Member> findByEmailAndPassword(String email, String pwd);
 
     // existsByEmail: 해당 이메일이 데이터베이스에 존재하는지 여부를 확인하는 메서드
     boolean existsByEmail(String email);
