@@ -26,7 +26,7 @@ public class ChatRoomResDto {
         return this.sessions.size() == 0;
     }
 
-    @Builder
+    @Builder // 빌더 패턴 적용
     public ChatRoomResDto(String roomId, String name, LocalDateTime regDate) {
         this.roomId = roomId;
         this.name = name;
