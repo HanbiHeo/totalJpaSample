@@ -43,7 +43,7 @@ public class WebSecurityConfig implements WebMvcConfigurer {
                 .accessDeniedHandler(jwtAccessDeniedHandler)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/auth/**", "/ws/**", "/movies/**").permitAll()
+                .antMatchers("/auth/**", "/ws/**", "/movies/**", "/test/**").permitAll() // 토큰을 보지 않는다.
                 .antMatchers("/v2/api-docs", "/swagger-resources/**", "/swagger-ui.html", "/webjars/**", "/swagger/**", "/sign-api/exception").permitAll()
                 .anyRequest().authenticated()
                 .and()

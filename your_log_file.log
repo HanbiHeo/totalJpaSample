@@ -6420,3 +6420,162 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 19:40:48.906 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 19:40:48.911 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 19:40:48.921 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:46:30.057 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 21444 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+14:46:30.062 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+14:46:30.152 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+14:46:30.152 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:46:30.153 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:46:31.720 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:46:31.869 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132 ms. Found 8 JPA repository interfaces.
+14:46:33.056 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+14:46:33.073 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+14:46:33.077 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:46:33.077 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+14:46:33.221 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:46:33.222 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3069 ms
+14:46:33.559 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:46:33.676 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+14:46:33.971 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:46:34.143 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:46:34.830 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:46:34.871 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14:46:36.568 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:46:36.585 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:46:37.997 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:46:38.198 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:46:38.203 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+14:46:38.215 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+14:46:38.577 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43d2f868, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@674cfeca, org.springframework.security.web.context.SecurityContextPersistenceFilter@70399ef, org.springframework.security.web.header.HeaderWriterFilter@6b7dc3f, org.springframework.web.filter.CorsFilter@5abaeed, org.springframework.security.web.authentication.logout.LogoutFilter@5195e3d3, com.kh.totalJpaSample.jwt.JwtFilter@399aa006, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@313df822, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51f055a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1209efc2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ddf1ee5, org.springframework.security.web.session.SessionManagementFilter@605c691e, org.springframework.security.web.access.ExceptionTranslationFilter@7304b929, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63a13a56]
+14:46:38.674 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:46:39.200 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+14:46:39.236 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+14:46:39.239 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:46:39.274 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:46:39.325 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:46:39.537 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: boardListUsingGET_1
+14:46:39.593 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+14:46:39.624 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 10.243 seconds (JVM running for 11.481)
+14:57:00.105 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14:57:00.109 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14:57:00.120 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14:57:05.594 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 36872 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+14:57:05.598 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+14:57:05.692 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+14:57:05.692 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:57:05.692 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:57:07.044 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:57:07.165 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109 ms. Found 8 JPA repository interfaces.
+14:57:08.496 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+14:57:08.508 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+14:57:08.513 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:57:08.513 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+14:57:08.696 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:57:08.696 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3003 ms
+14:57:09.120 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:57:09.256 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+14:57:09.586 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:57:09.755 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:57:10.246 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:57:10.261 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+14:57:11.421 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:57:11.435 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:57:12.489 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:57:12.682 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:57:12.687 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+14:57:12.698 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+14:57:13.034 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6986092d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5aae95ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ddd72e1, org.springframework.security.web.header.HeaderWriterFilter@6388e925, org.springframework.web.filter.CorsFilter@76c6bc11, org.springframework.security.web.authentication.logout.LogoutFilter@5c6c6c85, com.kh.totalJpaSample.jwt.JwtFilter@6aedfbe5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7091596e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79d06345, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52d98784, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33fb48f4, org.springframework.security.web.session.SessionManagementFilter@28141ca, org.springframework.security.web.access.ExceptionTranslationFilter@632f3298, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@beeab7a]
+14:57:13.129 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:57:13.582 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+14:57:13.610 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+14:57:13.611 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+14:57:13.633 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:57:13.674 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+14:57:13.865 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: boardListUsingGET_1
+14:57:13.933 [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:57:13.933 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:57:13.935 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:57:13.941 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+14:57:13.977 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.969 seconds (JVM running for 10.003)
+15:00:20.380 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:00:20.386 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:00:20.394 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:00:23.031 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 16420 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+15:00:23.038 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+15:00:23.114 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+15:00:23.114 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:00:23.114 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:00:24.396 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:00:24.509 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 8 JPA repository interfaces.
+15:00:25.569 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+15:00:25.582 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+15:00:25.586 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:00:25.586 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+15:00:25.747 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:00:25.748 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2631 ms
+15:00:26.077 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:00:26.150 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+15:00:26.419 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:00:26.578 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:00:27.111 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:00:27.127 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+15:00:28.341 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:00:28.355 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:00:29.479 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:00:29.667 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:00:29.670 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+15:00:29.679 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+15:00:29.986 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76c6bc11, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aedfbe5, org.springframework.security.web.context.SecurityContextPersistenceFilter@71eb5932, org.springframework.security.web.header.HeaderWriterFilter@44f9d9ed, org.springframework.web.filter.CorsFilter@33fb48f4, org.springframework.security.web.authentication.logout.LogoutFilter@7574cf50, com.kh.totalJpaSample.jwt.JwtFilter@1dd5aba0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f964656, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@555ae781, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79d06345, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5eb0ba3f, org.springframework.security.web.session.SessionManagementFilter@9a4b7d1, org.springframework.security.web.access.ExceptionTranslationFilter@77984f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31f2f6c9]
+15:00:30.088 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:00:30.505 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+15:00:30.529 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+15:00:30.530 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:00:30.549 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:00:30.575 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:00:30.745 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: boardListUsingGET_1
+15:00:30.809 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+15:00:30.857 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.334 seconds (JVM running for 9.195)
+15:07:44.797 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+15:07:44.805 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15:07:44.814 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15:07:49.466 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Starting TotalJpaSampleApplication using Java 19.0.2 on DESKTOP-F4QGJRU with PID 38328 (C:\Users\hhb03\Desktop\dev\backend\totalJpaSample\out\production\classes started by hhb03 in C:\Users\hhb03\Desktop\dev\backend\totalJpaSample)
+15:07:49.469 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - No active profile set, falling back to 1 default profile: "default"
+15:07:49.544 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\hhb03\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.5.0.0\eb13f0948ca8675f71d59b5e8a1129d4c6189e7a\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/hhb03/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.5.0.0/eb13f0948ca8675f71d59b5e8a1129d4c6189e7a/oraclepki.jar
+15:07:49.544 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:07:49.544 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:07:50.749 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:07:50.878 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 8 JPA repository interfaces.
+15:07:51.974 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+15:07:51.987 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+15:07:51.994 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:07:51.994 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+15:07:52.147 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:07:52.147 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2603 ms
+15:07:52.471 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15:07:52.545 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+15:07:52.809 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:07:52.954 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15:07:53.439 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15:07:53.460 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+15:07:54.614 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:07:54.629 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:07:55.663 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:07:55.855 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:07:55.858 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+15:07:55.863 [restartedMain] INFO  c.k.t.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+15:07:56.183 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17c16ed2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6986092d, org.springframework.security.web.context.SecurityContextPersistenceFilter@71eb5932, org.springframework.security.web.header.HeaderWriterFilter@44f9d9ed, org.springframework.web.filter.CorsFilter@5aae95ce, org.springframework.security.web.authentication.logout.LogoutFilter@7574cf50, com.kh.totalJpaSample.jwt.JwtFilter@76c6bc11, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7f964656, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@555ae781, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79d06345, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6aedfbe5, org.springframework.security.web.session.SessionManagementFilter@9a4b7d1, org.springframework.security.web.access.ExceptionTranslationFilter@77984f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31f2f6c9]
+15:07:56.272 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+15:07:56.742 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+15:07:56.773 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+15:07:56.774 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+15:07:56.798 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:07:56.834 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+15:07:57.026 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: boardListUsingGET_1
+15:07:57.074 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+15:07:57.112 [restartedMain] INFO  c.k.t.TotalJpaSampleApplication - Started TotalJpaSampleApplication in 8.17 seconds (JVM running for 9.002)
+15:09:23.973 [http-nio-8111-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:09:23.973 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+15:09:23.975 [http-nio-8111-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+15:10:48.678 [http-nio-8111-exec-9] WARN  c.k.t.controller.TestController - 데이터 : {id=허한비, pwd=hhb1234}
+18:19:50.188 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:19:50.207 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:19:50.213 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
